@@ -1,0 +1,14 @@
+<div class="friendslist">
+	Your friends:
+	<div class="" ng-repeat="friend in $ctrl.friends">
+		<div class="label label-success">
+			<a id="{{friend}}" href="#/{{ friend }}">{{ friend }}</a>
+		</div>
+	</div>
+	Folks that added you:
+	<div class="" ng-repeat="person in $ctrl.user.friendrequests">
+		<div class="label label-warning">
+			<a href="#/{{ person }}">{{ person }}</a> <button id="accept_{{person}}" class="btn btn-success"type="button" name="button"ng-click ="acceptFriend(person)">accept</button>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,536 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for Project/app.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../index.html">all files</a> / <a href="index.html">Project/</a> app.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">33.77% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>26/77</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/18</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>0/23</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">33.77% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>26/77</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158</td><td class="line-coverage quiet"><span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">var cookieParser = require('cookie-parser');
+var express      = require('express');
+var assert       = require('assert');
+var bodyParser   = require('body-parser');
+var db           = require('./dbCalls.js');
+var app          = express();
+&nbsp;
+var path = '/publicng/'
+&nbsp;
+app.use(cookieParser());
+app.use(express.static(__dirname + path));
+app.use(bodyParser.urlencoded({
+  extended: true
+}));
+app.use(bodyParser.json());
+&nbsp;
+var url = 'mongodb://localhost:27017/test';
+&nbsp;
+app.post('/login', <span class="fstat-no" title="function not covered" >function (req, res) {</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >	db.login(url, req.body.uname, req.body.passwd, <span class="fstat-no" title="function not covered" >function(result) {</span></span>
+<span class="cstat-no" title="statement not covered" >		if (result) {</span>
+<span class="cstat-no" title="statement not covered" >			res.cookie('uid', result);</span>
+<span class="cstat-no" title="statement not covered" >			res.send(result);</span>
+		}
+		else {
+<span class="cstat-no" title="statement not covered" >			res.sendStatus(404);</span>
+		}
+&nbsp;
+	})
+});
+&nbsp;
+app.get('/logout', <span class="fstat-no" title="function not covered" >function (req, res) {</span>
+<span class="cstat-no" title="statement not covered" >	res.clearCookie('uid');</span>
+<span class="cstat-no" title="statement not covered" >	res.redirect('/');</span>
+});
+&nbsp;
+app.get('/', <span class="fstat-no" title="function not covered" >function(req, res) {</span>
+<span class="cstat-no" title="statement not covered" >	var userID = req.cookies.uid;</span>
+<span class="cstat-no" title="statement not covered" >	if (userID != null) {</span>
+<span class="cstat-no" title="statement not covered" >		res.sendFile(__dirname + path + 'start.html');</span>
+	}
+	else {
+<span class="cstat-no" title="statement not covered" >		res.sendFile(__dirname + path + 'login.html');</span>
+	}
+});
+&nbsp;
+app.get('/me', <span class="fstat-no" title="function not covered" >function(req, res) {</span>
+<span class="cstat-no" title="statement not covered" >	var userID = req.cookies.uid;</span>
+<span class="cstat-no" title="statement not covered" >	if (userID != null) {</span>
+<span class="cstat-no" title="statement not covered" >		db.getUser(url, userID, <span class="fstat-no" title="function not covered" >function(user) {</span></span>
+<span class="cstat-no" title="statement not covered" >			res.send(user);</span>
+		});
+	}
+	else {
+<span class="cstat-no" title="statement not covered" >		res.sendStatus(404);</span>
+	}
+});
+&nbsp;
+app.post('/addfriend', <span class="fstat-no" title="function not covered" >function(req, res) {</span>
+<span class="cstat-no" title="statement not covered" >	var userID = req.cookies.uid;</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >	db.addFriend(url, userID, req.body.friend, <span class="fstat-no" title="function not covered" >function(result, resulta){</span></span>
+<span class="cstat-no" title="statement not covered" >		if(result) {</span>
+<span class="cstat-no" title="statement not covered" >			res.send([result, resulta]);</span>
+		}
+		else {
+<span class="cstat-no" title="statement not covered" >			res.sendStatus(404);</span>
+		}
+	});
+});
+&nbsp;
+app.get('/friends', <span class="fstat-no" title="function not covered" >function(req, res) {</span>
+<span class="cstat-no" title="statement not covered" >	var userID = req.cookies.uid;</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >	db.getFriends(url, userID, <span class="fstat-no" title="function not covered" >function(result){</span></span>
+<span class="cstat-no" title="statement not covered" >		if(result !== undefined) {</span>
+<span class="cstat-no" title="statement not covered" >			res.send(result);</span>
+		}
+		else {
+<span class="cstat-no" title="statement not covered" >			res.send(false);</span>
+		}
+	});
+});
+&nbsp;
+app.get('/search', <span class="fstat-no" title="function not covered" >function(req, res) {</span>
+<span class="cstat-no" title="statement not covered" >	var name = req.query.name;</span>
+<span class="cstat-no" title="statement not covered" >	db.search(url, name, <span class="fstat-no" title="function not covered" >function(users) {</span></span>
+<span class="cstat-no" title="statement not covered" >		if (users) {</span>
+<span class="cstat-no" title="statement not covered" >			res.send(users);</span>
+		}
+		else {
+<span class="cstat-no" title="statement not covered" >			res.sendStatus(404);</span>
+		}
+	});
+});
+&nbsp;
+app.get('/getall', <span class="fstat-no" title="function not covered" >function(req, res) {</span>
+<span class="cstat-no" title="statement not covered" >	db.getAll(url, <span class="fstat-no" title="function not covered" >function(users) {</span></span>
+<span class="cstat-no" title="statement not covered" >		res.send(users);</span>
+	});
+});
+&nbsp;
+app.get('/messages', <span class="fstat-no" title="function not covered" >function(req, res) {</span>
+<span class="cstat-no" title="statement not covered" >	db.getMessages(url, req.cookies.uid, <span class="fstat-no" title="function not covered" >function(d) {</span></span>
+<span class="cstat-no" title="statement not covered" >		if (d) {</span>
+<span class="cstat-no" title="statement not covered" >			res.send(d);</span>
+		}
+		else {
+<span class="cstat-no" title="statement not covered" >			res.sendStatus(404);</span>
+		}
+	});
+});
+&nbsp;
+app.post('/sendmessage', <span class="fstat-no" title="function not covered" >function(req, res) {</span>
+<span class="cstat-no" title="statement not covered" >	db.sendMessage(url, req.body.to, req.cookies.uid, req.body.message, <span class="fstat-no" title="function not covered" >function(result) {</span></span>
+<span class="cstat-no" title="statement not covered" >		res.send(result);</span>
+	})
+});
+&nbsp;
+app.post('/acceptrequest', <span class="fstat-no" title="function not covered" >function(req, res) {</span>
+<span class="cstat-no" title="statement not covered" >	db.acceptFriendRequest(url, req.cookies.uid, req.body.acceptee, <span class="fstat-no" title="function not covered" >function(result) {</span></span>
+<span class="cstat-no" title="statement not covered" >		if (result) {</span>
+<span class="cstat-no" title="statement not covered" >			res.send(result);</span>
+		}
+		else {
+<span class="cstat-no" title="statement not covered" >			res.sendStatus(404);</span>
+		}
+	});
+});
+&nbsp;
+app.post('/register', <span class="fstat-no" title="function not covered" >function(req, res) {</span>
+<span class="cstat-no" title="statement not covered" >	db.registerUser(url, req.body, <span class="fstat-no" title="function not covered" >function(worked) {</span></span>
+<span class="cstat-no" title="statement not covered" >		console.log(worked);</span>
+<span class="cstat-no" title="statement not covered" >		if (worked) {</span>
+<span class="cstat-no" title="statement not covered" >			res.status(200).send(worked);</span>
+		}
+		else {
+<span class="cstat-no" title="statement not covered" >			res.status(200).send(worked);</span>
+		}
+	})
+});
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+<span class="fstat-no" title="function not covered" >function start() {</span>
+<span class="cstat-no" title="statement not covered" >	var host = server.address().address;</span>
+<span class="cstat-no" title="statement not covered" >	var port = server.address().port;</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >	console.log("Your awesome node.js/express app listening at http://%s:%s", host, port);</span>
+}
+&nbsp;
+var server = app.listen(8090, start);
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Sun Nov 06 2016 13:39:12 GMT+0100 (CET)
+</div>
+</div>
+<script src="../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../sorter.js"></script>
+</body>
+</html>

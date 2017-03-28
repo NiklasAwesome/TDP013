@@ -1,0 +1,7 @@
+<div class="list">
+	Search for a user!:
+	<input id="searchbar" type="text" name="name" value="" ng-model="searchbox">
+	<div class="dude" ng-repeat="user in $ctrl.all | filter:searchbox" ng-hide="searchbox == ''">
+		Username: <a id="{{user.u_id}}" href="#/{{user.u_id}}">{{ user.u_id }}</a>, Real name: {{user.name}}
+	</div>
+</div>

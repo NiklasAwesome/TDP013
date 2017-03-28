@@ -1,0 +1,31 @@
+<div class="userpage" ng-app="myApp" ng-controller="userCtrl" ng-if="exists">
+	<div class="userpanel">
+		<h1> {{ $ctrl.user.u_id }}</h1>
+		<button id="addfriend" type="button" name="button" ng-if="notFriends" ng-click="addAsFriend()">Add friend!</button>
+		<ul>
+			<li>Name: {{ $ctrl.user.personalInfo.realName }}</li>
+			<li>Birthday: {{ $ctrl.user.personalInfo.bday }}</li>
+			<li>Gender: {{ $ctrl.user.personalInfo.gender }}</li>
+			<li>Job: {{ $ctrl.user.personalInfo.occupation }}</li>
+		</ul>
+	</div>
+	<div class="messages" ng-if ="!notFriends">
+		<h2>Messages</h2>
+		<input id="msgbx" type="text" name="sendmsg" value="" ng-model="newMsg" ng-hide="me">
+		<input id="send" type="button" name="name" value="send" ng-click="sendMsg(newMsg); newMsg = ''"  ng-hide="me">
+		<div id="messagelist">
+			<div class="messagebox panel panel-primary" id="{{ message._id }}" ng-repeat="message in $ctrl.messages | orderBy:'-'">
+				<div class="panel-heading">
+					<a class="bajs" href="#/{{ message.from }}">{{ message.from }}</a>
+				</div>
+				<div class="panel-body">
+					{{ message.message }}
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="error" ng-if="!exists">
+	<h1>No user named that</h1>
+</div>

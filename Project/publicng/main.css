@@ -1,0 +1,34 @@
+body {
+	color: blue;
+
+}
+.centerBox {
+	margin: 3% 10% 0 10%;
+	background-color: #D3D3D3;
+}
+#main {
+	padding: 3%;
+}
+
+.messagebox {
+	border: 1px solid black;
+}
+
+.bajs {
+	color: inherit;
+}
+.dude {
+	color: inherit;
+}
+
+.registerbox {
+	/*float: right;*/
+}
+
+.registermainbox {
+	width: 30%;
+}
+
+.friendslist {
+	font-size: 200%
+}

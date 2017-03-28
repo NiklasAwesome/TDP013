@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>test</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="/cookie.js"></script>
+		<link rel="stylesheet" href="/css/bootstrap-theme.min.css" media="screen" title="no title">
+		<link rel="stylesheet" href="/css/bootstrap.min.css" media="screen" title="no title">
+
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+		<script src="/scriptng.js"></script>
+		<script src="/script.js"></script>
+
+
+
+	</head>
+	<body>
+		<input type="text" name="name" value="" id="to">
+		<input type="text" name="name" value="" id="msgtext">
+		<button class="btn btn-primary" type="button" name="button" onclick="sendDaMsg()">send</button>
+
+		<button class="btn btn-danger" type="button" name="button" onclick="$.removeCookie('uid');location.reload(true);">Logout</button>
+		<input type="text" name="name" value="" id="friendname">
+		<button class="btn btn-primary" type="button" name="button" onclick="addFriend()">Add</button>
+		<br>
+		<input type="text" name="name" value="" id="toAccept">
+		<button class="btn btn-primary" type="button" name="button" onclick="acceptDaRequest()">Accept</button>
+
+		<div ng-app="myApp" ng-controller="userCtrl">
+			<div ng-repeat="friend in friends" class="label label-primary">
+
+					{{ friend }}
+
+			</div>
+			<div ng-repeat="message in messages" class="label label-success">
+				{{ message.message }}
+			</div>
+		</div>
+
+	</body>
+</html>
